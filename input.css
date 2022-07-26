@@ -55,6 +55,17 @@ body {
   /* background-blend-mode: darken; */
 }
 
+.hero-section-home {
+  background-image: url('../images/home-hero.png');
+  height: 90vh;
+  /* box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.381); */
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  /* background-blend-mode: darken; */
+}
+
 .proposal-btn {
     position: relative;
 }
