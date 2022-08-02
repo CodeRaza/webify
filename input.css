@@ -70,6 +70,10 @@ body {
     position: relative;
 }
 
+.btn-hover-classic:hover{
+  background-color: #011a39;
+}
+
 .proposal-btn::before {
     content: "";
     position: absolute;
