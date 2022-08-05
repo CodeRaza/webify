@@ -51,3 +51,14 @@ showSlides(slideIndex);
 
 var slideIndex2 = 1;
 showSlide2(slideIndex2);
+
+// Dialog box logic
+
+function toggleDialogBox(){
+    const elm = document.getElementById("dia-box");
+
+    if(elm){
+        elm.classList.toggle("hidden")
+        console.log(2);
+    }
+}

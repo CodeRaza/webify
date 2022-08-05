@@ -8,6 +8,41 @@
     <title>Webify - Services</title>
 </head>
 <body>
+    <div id="dia-box" class="hidden absolute text-center pb-12 w-4/5 lg:w-[46%] left-[10%] lg:left-[30%] top-[20%] bg-white rounded-2xl p-7">
+        <img onclick="toggleDialogBox()" class="absolute right-3 top-3" src="/images/sm-cross-ico.png" alt="" srcset="">
+        <h1 class="text-4xl text-center font-bold mt-5">What Makes Us Different?</h1>
+        <p class="mx-auto w-[69%] text-center mt-2">Please fill out the short form below with your project details 
+            and we will be in touch shortly.
+        </p>
+        <div class="lg:flex lg:flex-wrap justify-center lg:space-x-2 mt-5">
+            <div class="w-full lg:w-[45%] border rounded-md border-slate-300 relative flex">
+                <img src="/images/sm-person-ico.png" class="h-4 w-4 ml-5 mt-3" alt="" srcset="">
+                <input class="left border border-transparent focus:bg-transparent outline-none" placeholder="Name" type="text">
+            </div>
+            <div class="w-full lg:w-[45%] border rounded-md border-slate-300 relative mt-3 lg:mt-0 flex">
+                <img src="/images/sm-email-ico.png" class="h-4 w-4 ml-5 mt-3" alt="" srcset="">
+                <input class="left border border-transparent focus:bg-transparent outline-none" placeholder="Email" type="text">
+            </div>
+            <div class="w-full lg:w-[45%] border rounded-md border-slate-300 mt-3 relative flex">
+                <img src="/images/sm-link-ico.png" class="h-4 w-4 ml-5 mt-3" alt="" srcset="">
+                <input class="left border border-transparent focus:bg-transparent outline-none" placeholder="Your Website Url" type="text">
+            </div>
+            <div class="w-full lg:w-[45%] border rounded-md border-slate-300 relative mt-3  flex">
+                <img src="/images/sm-money-ico.png" class="h-4 w-4 ml-5 mt-3" alt="" srcset="">
+                <select class="left border border-transparent w-full focus:bg-transparent outline-none">
+                    <option class="bg-slate-200 p-3" value="">Your Budget </option>
+                    <option class="bg-slate-200 p-3 border border-gray-500" value="">3500 - 2500 </option>
+                    <option class="bg-slate-200 p-3" value="">3500 - 5000 </option>
+                    <option class="bg-slate-200 p-3" value="">3500 - 5000 </option>
+                </select>
+            </div>
+            <div  class="w-full lg:w-[91%] h-[100px] border rounded-md border-slate-300 relative mt-3  flex">
+                <img src="/images/sm-msg-ico.png" class="h-4 w-4 ml-5 mt-3" alt="" srcset="">
+                <textarea class="left text-start	 w-full border border-transparent focus:bg-transparent outline-none" placeholder="Message" type="text"></textarea>
+            </div>
+        </div>
+        <a href=""  class=" inline-flex mt-7 text-center mx-auto bg-gradient-to-r from-orange-400 to-red-600 items-center self-center p-4 pl-9 pr-6 text-white rounded-full">SEND ME A PROPOSAL <img class="mx-3 h-3 w-3" src="../images/nav-button-up-arrow.png" alt=""></a>
+    </div>
     <div class="hero-section mx-auto w-fit">
         <!-- navbar -->
         <nav class="container w-4/5 relative mx-auto ">
@@ -21,8 +56,8 @@
                     <a href="./workflow.html" class="mx-4 p-1">Workflow</a>
                     <a href="" class="mx-4 p-1">Case Studies</a>
                     <a href="./about.html" class="mx-4 p-1">About</a>
-                    <div class="flex proposal-btn p-2 pt-1 -mt-1 ml-2 pl-6 text-center align-middle">
-                        <a href="" class="items-center mt-1 rounded-full">Request Proposal</a>
+                    <div onclick="toggleDialogBox()" class=" cursor-pointer flex proposal-btn p-2 pt-1 -mt-1 ml-2 pl-6 text-center align-middle">
+                        <p href="" class="items-center mt-1 rounded-full">Request Proposal</p>
                         <img class="mx-3 h-3 w-3 ml-5 mt-3" src="../images/nav-button-up-arrow.png" alt="">
                     </div>
                 </div>
@@ -51,7 +86,7 @@
                 <a href="./about.html" class="mt-2">About</a>
                 <div class="h-1 w-7 bg-white"></div>
                 <br>
-                <a href="" class="flex proposal-btn items-center self-center p-2 rounded-full">Request Proposal <img class="mx-3 h-3 w-3" src="../images/nav-button-up-arrow.png" alt=""></a>
+                <a href="" onclick="toggleDialogBox()" class="flex proposal-btn items-center self-center p-2 rounded-full">Request Proposal <img class="mx-3 h-3 w-3" src="../images/nav-button-up-arrow.png" alt=""></a>
             </div>
         </nav>
         <div class="bg-red-400 my-auto justify-center items-center">
