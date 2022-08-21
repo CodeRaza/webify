@@ -14,6 +14,33 @@
         .btn-hover-classic:hover{
             background-color: #011a39;
         }
+
+        .custom-text-handle{
+            font-size: 60px;
+            line-height: 1;
+        }
+
+        @media (max-width: 820px){
+            .custom-text-handle{
+                font-size: 40px;
+                line-height: 1;
+            }
+
+            .custom-margin{
+                margin-top: 50px;
+            }
+
+            .custom-btn{
+                margin-top: 40px;
+            }
+        }
+
+        @media (max-width: 600px){
+            .custom-text-handle{
+                font-size: 30px;
+                line-height: 1;
+            }
+        }
     </style>
     <link rel="stylesheet" href="https://unpkg.com/flowbite@1.5.1/dist/flowbite.min.css" />
     <script src="https://unpkg.com/flowbite@1.5.1/dist/flowbite.js"></script>
@@ -56,8 +83,8 @@
     </div>
     <div class="hero-section-home mx-auto w-fit">
         <!-- navbar -->
-        <nav class="container w-4/5 relative mx-auto ">
-            <div class="flex items-center justify-between">
+        <nav class="container w-3/4 lg:w-4/5 relative mx-auto ">
+            <div class="flex items-center justify-around lg:justify-between">
                 <div class="items-center">
                     <img class="h-13 mt-4" src="../images/logo.png" alt="">
                 </div>
@@ -100,16 +127,16 @@
                 <a href="" onclick="toggleDialogBox()" class="flex proposal-btn items-center self-center p-2 rounded-full">Request Proposal <img class="mx-3 h-3 w-3" src="../images/nav-button-up-arrow.png" alt=""></a>
             </div>
         </nav>
-        <div class="container w-4/5 mx-auto text-left h-80 mb-auto mt-32 ">
-            <span class="mb-auto  mx-auto text-left text-6xl font-bold text-white">
+        <div class="container w-3/4 lg:w-4/5 p-10 mx-auto lg:text-left h-80 mb-auto custom-margin lg:mt-32 ">
+            <span class="mb-auto custom-text-handle text-left font-bold text-white">
                 Webify is a Fintech <br>
                 focused <span class="text-amber-500">SEO Agency.</span>
             </span>
-            <p class="text-lg text-white w-1/2 mt-6 font-semibold">
+            <p class="text-lg text-white lg:w-1/2 mt-6 font-semibold">
                 We have hands-on, in the trenches knowledge from building some of the most successful SEO campaigns in the entire finance industry. From technical diagnostics to truly scaled content strategy, we’ve grown organic traffic from 6 and 7 figures to 9 figures.
             </p>
 
-            <a href=""  class="text-white border btn-hover-classic mt-14 inline-flex border-white rounded-full p-5 pl-8 pr-10 transition ease-in-out delay-150 duration-300 hover:border-5 hover:border-white">VIEW OUR SERVICES <img src="./images/nav-button-up-arrow.png" class="h-3 mt-2 w-3 ml-8 " alt=""></a>
+            <a href=""  class="text-white border custom-btn btn-hover-classic mt-14 inline-flex border-white rounded-full p-5 pl-8 pr-10 transition ease-in-out delay-150 duration-300 hover:border-5 hover:border-white">VIEW OUR SERVICES <img src="./images/nav-button-up-arrow.png" class="h-3 mt-2 w-3 ml-8 " alt=""></a>
         </div>
     </div>
 
@@ -186,10 +213,10 @@
                 <div class="container w-full mx-auto lg:-mt-20 lg:ml-10 pb-10 lg:pb-4 text-center items-center">
                     <div style="background-image: url('./images/slide-reviewer.png'); background-repeat: no-repeat; background-size: cover;" class=" h-40 w-40 mx-auto -mt-12 border border-red-500 rounded-full">
                         <div class="h-8 w-8 bg-white items-center mx-auto mt-[140px] rounded-full">
-                            <p class="text-6xl text-center text-blue-600 font-bold">"</p>
+                            <p class="text-6xl text-center text-blue-600 font-bold rotate-6">"</p>
                         </div>
                     </div>
-                    <p style="font-size: 31px" class="text-white w-full p-5 font-semibold mt-3 mx-auto">
+                    <p class="text-white lg:text-[31px] w-full p-5 font-semibold mt-3 mx-auto">
                         Igal is a true master of his craft. I worked with him first-hand on projects and am very confident that he can make an impact on
                          Fintech, or companies that want to expand globally.
                     </p>
@@ -204,10 +231,10 @@
                 <div class="container w-full mx-auto lg:-mt-20 lg:ml-10 pb-10 lg:pb-4 text-center items-center">
                     <div style="background-image: url('./images/customer-1.png'); background-repeat: no-repeat; background-size: cover;" class=" h-40 w-40 mx-auto -mt-12 border border-red-500 rounded-full">
                         <div class="h-8 w-8 bg-white items-center mx-auto mt-[140px] rounded-full">
-                            <p class="text-6xl text-center text-blue-600 font-bold">"</p>
+                            <p class="text-6xl text-center text-blue-600 font-bold rotate-6">"</p>
                         </div>
                     </div>
-                    <p style="font-size: 31px" class="text-white w-full p-5 font-semibold mt-3 mx-auto">
+                    <p class="text-white lg:text-[31px] w-full p-5 font-semibold mt-3 mx-auto">
                         Igal is a true master of his craft. I worked with him first-hand on projects and am very confident that he can make an impact on
                          Fintech, or companies that want to expand globally.
                     </p>
@@ -222,10 +249,10 @@
                 <div class="container w-full mx-auto lg:-mt-20 lg:ml-10 pb-10 lg:pb-4 text-center items-center">
                     <div style="background-image: url('./images/customer-2.png'); background-repeat: no-repeat; background-size: cover;" class=" h-40 w-40 mx-auto -mt-12 border border-red-500 rounded-full">
                         <div class="h-8 w-8 bg-white items-center mx-auto mt-[140px] rounded-full">
-                            <p class="text-6xl text-center text-blue-600 font-bold">"</p>
+                            <p class="text-6xl text-center text-blue-600 font-bold rotate-6">"</p>
                         </div>
                     </div>
-                    <p style="font-size: 31px" class="text-white w-full p-5 font-semibold mt-3 mx-auto">
+                    <p class="text-white w-full lg:text-[31px] p-5 font-semibold mt-3 mx-auto">
                         Igal is a true master of his craft. I worked with him first-hand on projects and am very confident that he can make an impact on
                          Fintech, or companies that want to expand globally.
                     </p>
@@ -266,7 +293,7 @@
                             interested in delivering a “flash in the pan” to our growth focused clients.
                         </p>
                     </div>
-                    <div style="border-color: rgb(84, 110, 255);" class=" justify-self-auto p-3 text-center w-11/12 h-[330px] lg:w-[380px] rounded-2xl mt-10 border border-red">
+                    <div style="border-color: rgb(84, 110, 255);" class="hidden lg:block justify-self-auto p-3 text-center w-11/12 h-[330px] lg:w-[380px] rounded-2xl mt-10 border border-red">
                         <img class="mb-4 mx-auto mt-4" src="../images/analytic-ico.png" alt="">
                         <h3 class=" text-2xl mt-8 font-bold text-white ">
                             Analytics & Diagnostics
@@ -275,7 +302,7 @@
                             They say the devil is in the details, and so are we. We leverage cutting edge analytics, attribution, and diagnostics solutions to empower our decision making. 
                         </p>
                     </div>
-                    <div style="border-color: rgb(84, 110, 255);" class=" justify-self-auto p-3 text-center w-11/12 h-[330px] lg:w-[380px] rounded-2xl mt-10 border border-red">
+                    <div style="border-color: rgb(84, 110, 255);" class="hidden lg:block justify-self-auto p-3 text-center w-11/12 h-[330px] lg:w-[380px] rounded-2xl mt-10 border border-red">
                         <img class="mb-4 mx-auto mt-4" src="../images/enterprise-ico.png" alt="">
                         <h3 class="mt-8 text-2xl font-bold text-white ">
                             Enterprise Technical Auditing
@@ -288,7 +315,7 @@
             </div>
             <div class="mySlides sc-slide w-full mx-auto -mt-10">
                 <div class="flex items-center justify-center space-x-5 mx-auto my-4">
-                    <div style="border-color: rgb(84, 110, 255);" class=" justify-self-auto p-3 ml-7 text-center items-center h-[330px] lg:w-[380px] rounded-2xl mt-10 border border-red">
+                    <div style="border-color: rgb(84, 110, 255);" class= "justify-self-auto p-3 ml-7 text-center items-center h-[330px] lg:w-[380px] rounded-2xl mt-10 border border-red">
                         <img class="mb-4 mx-auto mt-4" src="../images/up-grow.png" alt="">
                         <h3 class=" text-2xl mt-8 font-bold text-white ">
                             Growth Strategy 2
@@ -298,7 +325,7 @@
                             interested in delivering a “flash in the pan” to our growth focused clients.
                         </p>
                     </div>
-                    <div style="border-color: rgb(84, 110, 255);" class=" justify-self-auto p-3 text-center w-11/12 h-[330px] lg:w-[380px] rounded-2xl mt-10 border border-red">
+                    <div style="border-color: rgb(84, 110, 255);" class="hidden lg:block justify-self-auto p-3 text-center w-11/12 h-[330px] lg:w-[380px] rounded-2xl mt-10 border border-red">
                         <img class="mb-4 mx-auto mt-4" src="../images/analytic-ico.png" alt="">
                         <h3 class=" text-2xl mt-8 font-bold text-white ">
                             Analytics & Diagnostics 2
@@ -307,7 +334,7 @@
                             They say the devil is in the details, and so are we. We leverage cutting edge analytics, attribution, and diagnostics solutions to empower our decision making. 
                         </p>
                     </div>
-                    <div style="border-color: rgb(84, 110, 255);" class=" justify-self-auto p-3 text-center w-11/12 h-[330px] lg:w-[380px] rounded-2xl mt-10 border border-red">
+                    <div style="border-color: rgb(84, 110, 255);" class="hidden lg:block justify-self-auto p-3 text-center w-11/12 h-[330px] lg:w-[380px] rounded-2xl mt-10 border border-red">
                         <img class="mb-4 mx-auto mt-4" src="../images/enterprise-ico.png" alt="">
                         <h3 class="mt-8 text-2xl font-bold text-white ">
                             Enterprise Technical Auditing 2
@@ -330,7 +357,7 @@
                             interested in delivering a “flash in the pan” to our growth focused clients.
                         </p>
                     </div>
-                    <div style="border-color: rgb(84, 110, 255);" class=" justify-self-auto p-3 text-center w-11/12 h-[330px] lg:w-[380px] rounded-2xl mt-10 border border-red">
+                    <div style="border-color: rgb(84, 110, 255);" class="hidden lg:block justify-self-auto p-3 text-center w-11/12 h-[330px] lg:w-[380px] rounded-2xl mt-10 border border-red">
                         <img class="mb-4 mx-auto mt-4" src="../images/analytic-ico.png" alt="">
                         <h3 class=" text-2xl mt-8 font-bold text-white ">
                             Analytics & Diagnostics 3
@@ -339,7 +366,7 @@
                             They say the devil is in the details, and so are we. We leverage cutting edge analytics, attribution, and diagnostics solutions to empower our decision making. 
                         </p>
                     </div>
-                    <div style="border-color: rgb(84, 110, 255);" class=" justify-self-auto p-3 text-center w-11/12 h-[330px] lg:w-[380px] rounded-2xl mt-10 border border-red">
+                    <div style="border-color: rgb(84, 110, 255);" class="hidden lg:block justify-self-auto p-3 text-center w-11/12 h-[330px] lg:w-[380px] rounded-2xl mt-10 border border-red">
                         <img class="mb-4 mx-auto mt-4" src="../images/enterprise-ico.png" alt="">
                         <h3 class="mt-8 text-2xl font-bold text-white ">
                             Enterprise Technical Auditing 3
@@ -362,11 +389,11 @@
     <div style="background-color: #011a39;" class="mx-auto pb-32  text-center">
         <h1 class="text-4xl pt-24 font-bold text-white">Customer Experiences</h1>
         <br>
-        <div class="block lg:flex mt-24 w-4/5 space-x-9 justify-between mx-auto">
+        <div class="block lg:flex mt-24 w-4/5 lg:space-x-9 justify-between mx-auto">
             <div class="container mx-auto mt-24 lg:-mt-10 lg:ml-20 pb-10 lg:pb-4 text-center items-center border border-blue-700 rounded-3xl">
                 <div style="background-image: url('../images/customer-1.png');" class="h-24 w-24 mx-auto -mt-12 border border-red-500 rounded-full">
                     <div class="h-6 w-6 bg-white border border-blue-600 items-center mx-auto mt-20 rounded-full">
-                        <p class="text-3xl text-center text-blue-600 font-bold">"</p>
+                        <p class="text-3xl text-center text-blue-600 font-bold rotate-6">"</p>
                     </div>
                 </div>
                 <p style="font-size: 20px" class="text-white w-full p-5 font-semibold -mt-1 mx-auto">
@@ -382,7 +409,7 @@
             <div class="container lg:ml-5 mx-auto mt-20 w-full lg:-mt-10 text-center pb-10 lg:pb-4 items-center border border-blue-700 rounded-3xl">
                 <div style="background-image: url('../images/customer-2.png');" class="h-24 w-24 mx-auto -mt-12 border border-red-500 rounded-full">
                     <div class="h-6 w-6 bg-white border border-blue-600 items-center mx-auto mt-20 rounded-full">
-                        <p class="text-3xl text-center text-blue-600 font-bold">"</p>
+                        <p class="text-3xl text-center text-blue-600 font-bold rotate-6">"</p>
                     </div>
                 </div>
                 <p style="font-size: 19px" class="text-white w-full p-3 font-semibold mt-2 mx-auto">
@@ -396,9 +423,9 @@
             </div>
         </div>
         <div style="background-image: url('../images/amz-bg.png'); background-position: right; background-size: cover;" class="border bg-no-repeat bg-cover border-blue-700 rounded-3xl w-4/5 h-80  mx-auto mt-32">
-            <h1 class="text-5xl text-white font-bold mt-20">How to Get Started</h1>
+            <h1 class="p-4 text-5xl text-white font-bold mt-5 lg:mt-10">How to Get Started</h1>
             <p class="text-white text-1xl mt-6 font-bold">Get in touch with us at <span class="text-amber-600 underline">seo@webify.io</span></p>
-            <a href="" class="mx-auto mt-10 w-52 pl-4 text-center text-white justify-center flex items-center p-4 border-2 border-white rounded-full btn-hover-classic">Request Proposal <img class="mx-3 h-3 w-3" src="../images/nav-button-up-arrow.png" alt=""></a>
+            <a href="" class="mx-auto mt-5 lg:mt-10 w-52 pl-4 text-center text-white justify-center flex items-center p-4 border-2 border-white rounded-full btn-hover-classic">Request Proposal <img class="mx-3 h-3 w-3" src="../images/nav-button-up-arrow.png" alt=""></a>
         </div>
     </div>
 
